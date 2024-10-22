@@ -1,0 +1,5 @@
+extend type Mutation {
+  addProvince(province: ProvinceInput!): Province
+  updateProvince(id: ID!, province: ProvinceInput!): Province
+  deleteProvince(id: ID!): String
+}

@@ -1,0 +1,5 @@
+extend type Query {
+  getCityById(id: ID!): City!
+  getCities(page: Int!, size: Int!): [City!]!
+  getCitiesByProvinceId(provinceId: ID!, page: Int!, size: Int!): [City!]!
+}

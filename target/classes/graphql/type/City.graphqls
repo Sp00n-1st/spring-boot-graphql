@@ -1,0 +1,8 @@
+type City {
+  cityId: ID
+  name: String
+  postalCode: String
+  population: Int
+  area: Float
+  province: Province
+}

@@ -1,0 +1,5 @@
+type Mutation {
+  addCity(city: CityInput!): City
+  updateCity(id: ID!, city: CityInput!): City
+  deleteCity(id: ID!): String
+}

@@ -1,0 +1,4 @@
+type Query {
+  getProvinceById(id: ID!): Province!
+  getProvinces(page: Int!, size: Int!): [Province!]!
+}

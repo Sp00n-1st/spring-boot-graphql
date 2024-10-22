@@ -1,0 +1,7 @@
+input CityInput {
+  name: String!
+  postalCode: String!
+  population: Int!
+  area: Float!
+  provinceId: Int!
+}

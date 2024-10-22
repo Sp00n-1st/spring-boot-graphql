@@ -1,0 +1,8 @@
+type Province {
+  provinceId: ID
+  name: String
+  code: String
+  capital: String
+  population: Int
+  area: Float
+}
