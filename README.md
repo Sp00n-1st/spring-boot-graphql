@@ -13,7 +13,7 @@ It is GraphQL project developed on Java Spring Boot. With Postgres SQL
 * Get Province By ID
 <img width="1432" src="https://github.com/user-attachments/assets/f35b8499-01a1-4720-9ce1-b365e995c0f8">
 
-*Update Province
+* Update Province
 <img width="1432" src="https://github.com/user-attachments/assets/a105ae4a-5a18-4613-991b-972f906dc28e">
 
 * Delete Province
