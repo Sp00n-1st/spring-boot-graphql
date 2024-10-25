@@ -9,6 +9,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.springboot.graphql.serialization.province.ProvinceSerializer;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,6 +24,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "province")
+@JsonSerialize(using = ProvinceSerializer.class)
 public class Province {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -7,6 +7,10 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.springboot.graphql.serialization.city.CitySerializer;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,6 +22,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "city")
+@JsonSerialize(using = CitySerializer.class)
 public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
